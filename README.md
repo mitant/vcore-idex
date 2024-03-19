@@ -168,3 +168,25 @@ EXPERIMENTAL, ultra fast and seamless IDEX toolchanges.
 ```ini
 ENTER_YOUR_PATH_TO_PYTHON\python3.exe "ENTER_YOUR_PATH_TO_THE_FILE\ftc.py"
 ```
+
+# Orca Slicer
+## Printer Settings
+### Machine start G-Code
+```ini
+START_PRINT EXTRUDER_TEMP={first_layer_temperature[0]} EXTRUDER_TEMP_1={first_layer_temperature[1]} EXTRUDER_OTHER_LAYER_TEMP={nozzle_temperature_initial_layer[0]} EXTRUDER_OTHER_LAYER_TEMP_1={nozzle_temperature_initial_layer[1]} BED_TEMP=[first_layer_bed_temperature] X0={first_layer_print_min[0]} Y0={first_layer_print_min[1]} X1={first_layer_print_max[0]} Y1={first_layer_print_max[1]} INITIAL_TOOL={initial_tool} COLOR={extruder_colour[0]} COLOR_1={extruder_colour[1]}
+```
+
+- End G-Code
+```ini
+END_PRINT
+```
+
+- Before layer change G-Code
+```ini
+_LAYER_CHANGE
+```
+- Post processing script. 
+Needed to convert single extruder multimaterial gcode into IDEX macro compatible gcode
+```ini
+ENTER_YOUR_PATH_TO_PYTHON\python3.exe "ENTER_YOUR_PATH_TO_THE_FILE\orca-postprocessor.py"
+```
