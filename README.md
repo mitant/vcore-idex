@@ -5,6 +5,7 @@ Macros are based on [Mikkel Schmidt`s](https://github.com/miklschmidt) work and 
 # PLEASE NOTE NEW VAOC MAINSAIL SOURCE CODE CHANGES!
 - merged with latest mainsail version
 - works only with the new RatOS Development Branch for the upcoming RatOS 2.1 version
+- you need to use the new post processor module which is available in the devlopment branch
 
 # Features
 - RatOS macro compatibility 
