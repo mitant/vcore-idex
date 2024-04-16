@@ -1,15 +1,13 @@
-# V-Core IDEX for RatOS 2.X
-
-THIS ISNT A TUTORIAL OR A DOCUMENTATION!
-
-THIS IS MY PRIVATE CONFIGURATION I SHARE!
-
-THIS IS ONYL FOR EXPERIENCED USERS, YOU SHOULD KNOW HOW KLIPPER WORKS AND BE ABLE TO CREATE YOUR OWN HARDWARE CONFIGURAITON BEFORE TOUCHING THIS!
-
-
+V# V-Core IDEX for RatOS 2.X
 This is a unofficial and temporary RatOS V2.X IDEX Implementation. Consider it as beta or alpha. 
 Macros are based on [Mikkel Schmidt`s](https://github.com/miklschmidt) work and have been modified and extended by [Helge Keck](https://github.com/HelgeKeck).
 
+# PLEASE NOTE NEW VAOC MAINSAIL SOURCE CODE CHANGES!
+- merged with latest mainsail version
+- works only with the new RatOS Development Branch for the upcoming RatOS 2.1 version
+- you need to use the new post processor module which is available in the devlopment branch
+
+# Features
 - RatOS macro compatibility 
 - V-Core IDEX Mainsail
 - octopus v1.1 idex board configuration 
